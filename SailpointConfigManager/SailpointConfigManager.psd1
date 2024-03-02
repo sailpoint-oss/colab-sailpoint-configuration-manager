@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'InowConfigManager.psm1'
+RootModule = 'SailpointConfigManager.psm1'
 
 # Version number of this module.
 ModuleVersion = '1.0.0'
@@ -30,7 +30,7 @@ CompanyName = 'SailPoint Developer Community'
 Copyright = '(c) Raghunath Anne. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'InowConfigManager - the PowerShell module for IdentityNow configuration management and version control'
+Description = 'SailpointConfigManager - the PowerShell module for IdentityNow configuration management and version control'
 
 # Minimum version of the PowerShell engine required by this module
 PowerShellVersion = '6.2'

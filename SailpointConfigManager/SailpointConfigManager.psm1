@@ -24,7 +24,7 @@ $Script:CmdletBindingParameters = @('Verbose','Debug','ErrorAction','WarningActi
 
 . $PSScriptRoot\ExportSpConfig.ps1
 
-. $PSScriptRoot\InowConfiguration.ps1
+. $PSScriptRoot\SailpointConfiguration.ps1
 
 . $PsScriptRoot\ExecuteGitCommands.ps1
 #endregion
