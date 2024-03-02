@@ -80,7 +80,7 @@ Schedule the above snippet to frequently pull from your tenant and push to the g
 
 
 ## License
-
+By using this CoLab item, you are agreeing to SailPoint’s [Terms of Service](https://developer.sailpoint.com/discuss/tos) for our developer community and open-source CoLab.
 
 ## Code of Conduct
 
