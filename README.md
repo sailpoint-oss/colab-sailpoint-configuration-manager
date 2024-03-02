@@ -11,7 +11,7 @@ To get started with the SailpointConfigManager
 ### prerequisite 
 
 1 Powershell module 6.2 and above
-2 Identity Now clientId and Secret
+2 Sailpoint clientId and Secret
 
 ### Download
 Follow these steps to manually install the PowerShell module:
@@ -38,7 +38,8 @@ The SDK is now installed. To learn how to configure the SDK, refer to the Config
     $env:SAIL_CLIENT_ID="<client ID>"
     $env:SAIL_CLIENT_SECRET="<client secret>"
 ```
-### Export configuration from the identityNow
+### Export configuration from the Sailpoint
+
 ```
     Export-SpConfig -OutputPath "<path to extract configuration>"
 ```
