@@ -1,10 +1,10 @@
 ## About the project
 
-This repository contains the complete build, to extract Sailpoint IdentityNow configuration into files and git commands to support version control.
+This repository contains the complete build, to extract Sailpoint configuration into files and git commands to support version control.
 
 ## Documentation 
 
-To get started with the InowConfigManager
+To get started with the SailpointConfigManager
 
 ## Steps
 
@@ -16,20 +16,20 @@ To get started with the InowConfigManager
 ### Download
 Follow these steps to manually install the PowerShell module:
 
-* Download the source code zip from the most recent release on [GitHub](https://github.com/sailpoint-oss/colab-sailpoint-configuration-manager/blob/develop/assets/release/InowConfiguration-V1.0.0.zip).
-* Open the ZIP file, then open then folder labeled InowConfiguration-Vx.x.x, with the x.x.x representing the version you downloaded.
-* Extract the InowConfiguration module folder inside to one of the following locations:
-    * To install for the Current user: C:\Users\<username>\Documents\WindowsPowerShell\Modules\InowConfiguration
-    * To install for All users (requires Administrator privileges): C:\Program Files\WindowsPowerShell\Modules\InowConfiguration
+* Download the source code zip from the most recent release on [GitHub](https://github.com/sailpoint-oss/colab-sailpoint-configuration-manager/blob/develop/assets/release/SailpointConfiguration-V1.0.0.zip).
+* Open the ZIP file, then open then folder labeled SailpointConfiguration-Vx.x.x, with the x.x.x representing the version you downloaded.
+* Extract the SailpointConfiguration module folder inside to one of the following locations:
+    * To install for the Current user: C:\Users\<username>\Documents\WindowsPowerShell\Modules\SailpointConfiguration
+    * To install for All users (requires Administrator privileges): C:\Program Files\WindowsPowerShell\Modules\SailpointConfiguration
 
-*   Run Import-Module InowConfiguration to import the module into the current session.
-*   To validate that the module is installed, run Get-Module -ListAvailable InowConfiguration and verify that the module is listed. Additionally, you can run Get-Command -Module InowConfiguration to see the module's available commands.
+*   Run Import-Module SailpointConfiguration to import the module into the current session.
+*   To validate that the module is installed, run Get-Module -ListAvailable SailpointConfiguration and verify that the module is listed. Additionally, you can run Get-Command -Module SailpointConfiguration to see the module's available commands.
   
 The SDK is now installed. To learn how to configure the SDK, refer to the Configure section.
 
 ### Import Module
 ```
-  Import-Module InowConfigManager
+  Import-Module SailpointConfigManager
 ```
 
 ### Environment configuration
