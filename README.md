@@ -1,88 +1,41 @@
-## About the project
+[![Discourse Topics][discourse-shield]][discourse-url]
+[![Issues][issues-shield]][issues-url]
+[![Latest Releases][release-shield]][release-url]
+[![Contributor Shield][contributor-shield]][contributors-url]
 
-This repository contains the complete build, to extract Sailpoint configuration into files and git commands to support version control.
+[discourse-shield]:https://img.shields.io/discourse/topics?label=Discuss%20This%20Tool&server=https%3A%2F%2Fdeveloper.sailpoint.com%2Fdiscuss
+[discourse-url]:https://developer.sailpoint.com/discuss/tag/workflows
+[issues-shield]:https://img.shields.io/github/issues/sailpoint-oss/repo-template?label=Issues
+[issues-url]:https://github.com/sailpoint-oss/repo-template/issues
+[release-shield]: https://img.shields.io/github/v/release/sailpoint-oss/repo-template?label=Current%20Release
+[release-url]:https://github.com/sailpoint-oss/repo-template/releases
+[contributor-shield]:https://img.shields.io/github/contributors/sailpoint-oss/repo-template?label=Contributors
+[contributors-url]:https://github.com/sailpoint-oss/repo-template/graphs/contributors
 
-## Documentation 
+# SailPoint Configuration Manager
+[Explore the docs »](https://your-link-to-colab-topic-here)
 
-To get started with the SailpointConfigManager
+[New to the CoLab? Click here »](https://developer.sailpoint.com/discuss/t/about-the-sailpoint-developer-community-colab/11230)
 
-## Steps
+<!-- CONTRIBUTING -->
+## Contributing
 
-### prerequisite 
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1 Powershell module 6.2 and above
-2 Sailpoint clientId and Secret
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag `enhancement`.
+Don't forget to give the project a star! Thanks again!
 
-### Download
-Follow these steps to manually install the PowerShell module:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-* Download the source code zip from the most recent release on [GitHub](https://github.com/sailpoint-oss/colab-sailpoint-configuration-manager/blob/develop/assets/release/SailpointConfiguration-V1.0.0.zip).
-* Open the ZIP file, then open then folder labeled SailpointConfiguration-Vx.x.x, with the x.x.x representing the version you downloaded.
-* Extract the SailpointConfiguration module folder inside to one of the following locations:
-    * To install for the Current user: C:\Users\<username>\Documents\WindowsPowerShell\Modules\SailpointConfiguration
-    * To install for All users (requires Administrator privileges): C:\Program Files\WindowsPowerShell\Modules\SailpointConfiguration
-
-*   Run Import-Module SailpointConfiguration to import the module into the current session.
-*   To validate that the module is installed, run Get-Module -ListAvailable SailpointConfiguration and verify that the module is listed. Additionally, you can run Get-Command -Module SailpointConfiguration to see the module's available commands.
-  
-The SDK is now installed. To learn how to configure the SDK, refer to the Configure section.
-
-### Import Module
-```
-  Import-Module SailpointConfigManager
-```
-
-### Environment configuration
-```
-    $env:SAIL_BASE_URL="https://<tenant>.api.identitynow.com"
-    $env:SAIL_CLIENT_ID="<client ID>"
-    $env:SAIL_CLIENT_SECRET="<client secret>"
-```
-### Export configuration from the Sailpoint
-
-```
-    Export-SpConfig -OutputPath "<path to extract configuration>"
-```
-
-### Version control - One time setup
-
-1 If you want to store the configurations in GIT . There are many version control applications available, but one of the most widely used programs is git. If you are new to git, [you can learn more here][https://git-scm.com/].
-* Install git bash
-* Create a new git repository 
-* Open git bash
-* CD configuration folder
-* git clone
-* git add .
-* git commit -am "initial commit"
-* git push
-
-### Version Control - Extract configuration and git push
-
-
-```
-    $Outpath = <local Git repository path to store configuration>
-    Set-Location $Outpath
-    #Pull from the git before commit
-    Invoke-Gitpull
-    #Download all the configurations
-    Export-SpConfig -OutputPath ""
-    #Commit to the ADD - Add all new files
-    Invoke-GitAdd
-    #Invoke Gitcommit
-    Invoke-Gitcommit -Message "New changes"
-    Invoke-Gitpush
-```
-### Schedule
-Schedule the above snippet to frequently pull from your tenant and push to the git to maintain the history of all configuration changes in your tenat.
-
-## Contributing 
-
-
-
+<!-- LICENSE -->
 ## License
-By using this CoLab item, you are agreeing to SailPoint’s [Terms of Service](https://developer.sailpoint.com/discuss/tos) for our developer community and open-source CoLab.
 
-## Code of Conduct
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-
-
+<!-- CONTACT -->
+## Discuss
+[Click Here](https://developer.sailpoint.com/dicuss/tag/{tagName}) to discuss this tool with other users.
