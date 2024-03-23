@@ -29,7 +29,8 @@ function Export-Files($ConfigResponse){
 		$fileName="$($Object.self.name).json"		
 		$fileName=$fileName.Replace( "\","_");
 		$fileName=$fileName.Replace("/","_");
-		$filePath=$Path + $fileName			
+		$fileName=$fileName.Split([IO.Path]::GetInvalidFileNameChars()) -join '_'
+		$filePath=$Path + $fileName	
 		if(Test-Path $filePath){
 			Remove-Item $filePath
 		}
