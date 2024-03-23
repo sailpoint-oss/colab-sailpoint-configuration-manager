@@ -73,7 +73,7 @@ FunctionsToExport = 'Get-FunctionsToExport', 'Invoke-GitPull', 'Invoke-GitPush',
                'Invoke-GitCommit', 'Invoke-GitAdd', 'Export-Files', 'Export-SpConfig', 
                'Export-SpConfigAndCommit', 'Get-DefaultConfiguration', 
                'Set-DefaultConfiguration', 'Get-IDNAccessToken', 'Get-HomeConfig', 
-               'Get-EnvConfig', 'Get-LocalConfig', 'Get-Config'
+               'Get-EnvConfig', 'Get-LocalConfig', 'Get-Config', 'Invoke-GitCheckout', 'Invoke-GitBranch'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()

@@ -31,7 +31,11 @@ function Invoke-GitPush{
 }
 
 function Invoke-GitCommit{
-	& "$PSScriptRoot\commandLine\git-action.bat" $Message
+	[CmdletBinding()]
+	Param(		
+		[string] $Message
+	)	
+	& "$PSScriptRoot\commandLine\git-action.bat" commit $Message
 }
 
 function Invoke-GitAdd{
@@ -41,7 +45,27 @@ function Invoke-GitAdd{
 		[string] $Path
 	)	
 	
-	& "$PSScriptRoot\commandLine\git-action.bat" Add $path
+	& "$PSScriptRoot\commandLine\git-action.bat" add $path
+}
+
+function Invoke-GitBranch{
+
+	[CmdletBinding()]
+	Param(		
+		[string] $Name
+	)	
+	
+	& "$PSScriptRoot\commandLine\git-action.bat" branch $Name
+}
+
+function Invoke-GitCheckout{
+
+	[CmdletBinding()]
+	Param(		
+		[string] $Name
+	)	
+	
+	& "$PSScriptRoot\commandLine\git-action.bat" checkout $Name
 }
 
 

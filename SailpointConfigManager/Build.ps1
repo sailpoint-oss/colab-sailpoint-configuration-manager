@@ -67,3 +67,5 @@ $Manifest = @{
 }
 
 New-ModuleManifest @Manifest
+
+#Get-ChildItem $targetPath | Compress-Archive -DestinationPath "$targetPath.zip"
