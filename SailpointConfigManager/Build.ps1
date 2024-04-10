@@ -49,7 +49,7 @@ $Manifest = @{
 
     Author = 'Raghunath Anne'
     CompanyName = 'SailPoint Developer Community'
-    Description = 'SailpointConfigManager - the PowerShell module for IdentityNow'
+    Description = 'SailpointConfigManager - the PowerShell module for ISC'
 
     ModuleVersion = '1.0.0'
 
