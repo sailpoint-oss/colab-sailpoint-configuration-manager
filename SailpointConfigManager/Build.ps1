@@ -45,15 +45,15 @@ $ScriptDir = Split-Path $script:MyInvocation.MyCommand.Path
 $FunctionPath = "$PSScriptRoot" | ForEach-Object {$_}
 
 $Manifest = @{
-    Path = "$ScriptDir\InowConfigManager.psd1"
+    Path = "$ScriptDir\SailpointConfigManager.psd1"
 
     Author = 'Raghunath Anne'
     CompanyName = 'SailPoint Developer Community'
-    Description = 'InowConfigManager - the PowerShell module for IdentityNow'
+    Description = 'SailpointConfigManager - the PowerShell module for IdentityNow'
 
     ModuleVersion = '1.0.0'
 
-    RootModule = 'InowConfigManager.psm1'
+    RootModule = 'SailpointConfigManager.psm1'
     Guid = '31c323c5-4a04-4703-8b3b-4d3daa44b7d2' # Has to be static, otherwise each new build will be considered different module
 
     PowerShellVersion = '6.2'
