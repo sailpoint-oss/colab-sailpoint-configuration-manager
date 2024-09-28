@@ -25,11 +25,13 @@ function Export-Files($ConfigResponse){
 		if(!(Test-Path $Path)){
 			New-Item -ItemType Directory -Path $Path
 		}
-		Write-Debug "Start Extract to files in folder - $Path"		
+		Write-Debug "Start Extract to files in folder - $Path"
+		#TODO:ADD Alphanumeric regex to fix naming for $fileName
 		$fileName="$($Object.self.name).json"		
 		$fileName=$fileName.Replace( "\","_");
 		$fileName=$fileName.Replace("/","_");
 		$fileName=$fileName.Split([IO.Path]::GetInvalidFileNameChars()) -join '_'
+		$fileName=$fileName.Replace(":","_");
 		$filePath=$Path + $fileName	
 		if(Test-Path $filePath){
 			Remove-Item $filePath
