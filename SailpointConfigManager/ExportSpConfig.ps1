@@ -114,7 +114,7 @@ function Export-SpConfig
 			#To handle if not a PSCUstomObject
 			If( [string]$ConfigResponse.GetType() -eq "string" ){
 				Write-Debug "Invoke-Rest didnt parse into PSCustomObject, using json String"
-				return ( Export-Files ( $ConfigResponse | ConvertFrom-Json -AsHashTable -Depth 100 ) )
+				Export-Files ($ConfigResponse | ConvertFrom-Json -AsHashTable -Depth 100 )
 			}
 			else{
 				Export-Files $ConfigResponse
